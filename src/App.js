@@ -1,23 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import { useContext, useState } from "react";
+import Header from "./Components/Header";
+import { Store } from "./context/Store";
+import About from "./Pages/About";
+import Contact from "./Pages/Contact";
+import Hero from "./Pages/Hero";
+import Protfolio from "./Pages/Protfolio";
+import Service from "./Pages/Service";
 
 function App() {
+  const { state } = useContext(Store);
+  const { darkMode, colorMode } = state;
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className={`${darkMode ? "dark" : ""} duration-1000 ${colorMode}` }>  
+      <Header/> 
+      <Hero /> 
+      <About />
+      <Service /> 
+      <Protfolio /> 
+      <Contact />
     </div>
   );
 }

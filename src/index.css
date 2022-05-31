@@ -1,3 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --primary-color: #CC156D;
+    --hover-color: #BE185D;
+    --active-color: #db2777;
+  }
+  .green {
+    --primary-color: #009B72;
+    --hover-color: #028E73;
+    --active-color: #0a9378;
+  }
+  .yellow {
+    --primary-color: #F6B743;
+    --hover-color: #eaaa3c;
+    --active-color: #f2b957;
+  }
+  .blue {
+    --primary-color: #7E5FF9;
+    --hover-color: #6f50ed;
+    --active-color: #886fed;
+  }
+}
+
+@layer components {
+  .dark-active {
+    @apply duration-1000 bg-gray-800 z-10 opacity-95
+  }
+  .dark-inactive {
+    @apply duration-1000 bg-gray-300 z-10 opacity-95
+  }
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -10,4 +46,45 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.hero {
+  background-repeat:  no-repeat !important;
+  background-position: top right !important;
+  background: linear-gradient(55deg, #fff 50%, var(--primary-color) 50%);
+}
+
+.dark .dark\:bg-gray-500 {
+  background: linear-gradient(55deg, rgb(31 41 55) 50%, var(--primary-color) 50%);
+}
+
+.active {
+  transition: .5s;
+  position: relative;
+}
+
+.active::after {
+  content: '';
+  position: absolute;
+  width: 2rem;
+  height: 2px;
+  background-color: var(--hover-color);
+  display: block;
+}
+.nav-item:hover::after {
+  content: '';
+  position: absolute;
+  width: 2rem;
+  height: 2px;
+  background-color: var(--hover-color);
+  display: block;
+}
+
+.origin {
+  background-color: transparent !important;
+}
+
+.popup {
+  height: 80vh;
+  top: 10%;
 }
