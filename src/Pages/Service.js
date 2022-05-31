@@ -6,12 +6,12 @@ AOS.init();
 const Service = () => {
   return (
     <div className="dark:bg-gray-800 dark:text-white py-10">      
-        <div id="service" className='max-w-6xl mx-auto px-2 sm:px-6 lg:px-8'>
-            <div className="">
+        <div id="service" className='max-w-6xl mx-auto sm:px-6 lg:px-8'>
+            <div className="mx-2">
                 <p data-aos="zoom-in" data-aos-duration="600" className="font-bold text-3xl mt-5">Service Provide</p>
                 <div className="w-16 h-1 rounded-full mt-2 bg-skin-base"></div>
             </div>
-            <div className="grid grid-cols-12 gap-6">
+            <div className="grid grid-cols-12 gap-6 mx-2">
                 <div data-aos="fade-left" data-aos-duration="500" className="group col-span-12 sm:col-span-4 hover:bg-tahiti-100 hover:text-white duration-500 border-2 shadow-sm p-5 border-gray-300 rounded-md mt-5">
                     <button className=" rounded-tl-sm rounded-tr-3xl rounded-bl-3xl rounded-br-sm bg-skin-base px-5 py-2 group-hover:bg-white duration-500">
                         <Icon icon="ic:sharp-art-track" className='text-5xl text-white group-hover:text-skin-base duration-500'/>

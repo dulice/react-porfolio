@@ -4,7 +4,7 @@ import bookingApp from '../image/booking-app.png'
 import crypto from '../image/crypto.png'
 import movieImg from '../image/movie.png'
 import cooking from '../image/cooking.png'
-import { disableBodyScroll, enableBodyScroll, clearAllBodyScrollLocks } from 'body-scroll-lock';
+import { disableBodyScroll, enableBodyScroll } from 'body-scroll-lock';
 import AOS  from 'aos';
 import { BsXLg } from 'react-icons/bs'
 import { motion } from 'framer-motion'
