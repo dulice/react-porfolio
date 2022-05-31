@@ -1,5 +1,5 @@
-import { useContext, useState } from "react";
-import Header from "./Components/Header";
+import { useContext } from "react";
+import Navbar from "./Components/Navbar";
 import { Store } from "./context/Store";
 import About from "./Pages/About";
 import Contact from "./Pages/Contact";
@@ -12,7 +12,7 @@ function App() {
   const { darkMode, colorMode } = state;
   return (
     <div className={`${darkMode ? "dark" : ""} duration-1000 ${colorMode}` }>  
-      <Header/> 
+      <Navbar />
       <Hero /> 
       <About />
       <Service /> 
