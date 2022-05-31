@@ -44,7 +44,7 @@ const Navbar = () => {
     }
 
   return (
-    <nav className={`duration-500 w-full ${navClass} dark:${navClass} ${navColor} dark:${navColor} `}
+    <nav className={`duration-500 w-full dark-inactive dark:dark-active ${navColor} dark:${navColor} `}
       style={{
         top: window.innerWidth > 640 ? showNav : '0px',
         position: navPosition,
