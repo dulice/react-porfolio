@@ -1,23 +1,10 @@
 import React, { useState } from 'react'
-import mernEcom from '../image/mern-ecom.png'
-import bookingApp from '../image/booking-app.png'
-import crypto from '../image/crypto.png'
-import movieImg from '../image/movie.png'
-import cooking from '../image/cooking.png'
 import { disableBodyScroll, enableBodyScroll } from 'body-scroll-lock';
 import AOS  from 'aos';
 import { BsXLg } from 'react-icons/bs'
 import { motion } from 'framer-motion'
+import { data } from '../data/projectData'
 AOS.init();
-
-const data = [
-  {id: "0", name: "Ecommerce Website", image: mernEcom, demo: "https://mern-ecom-dulice.herokuapp.com/", source: "https://github.com/dulice/amazon", description: "This is a full responsive ecommerce website include client view and admin view. I am using frontend with Reactjs and user global control state Context Api. Using backend with nodejs framework express and store data with Mongodb.<br/>Card Number: 4242 4242 4242 4242<br/> MM/YY: 12 / 24 <br/>CVC: 123 <br/><br/>These are the following require to login into admin side.<br/>Name: popper1@gmail.com<br/>Password: 123456"},
-  {id: "1", name: "Booking App", image: bookingApp, demo: "https://hotel-booking-dulice.herokuapp.com/", source: "https://github.com/dulice/booking", description: "This is full responsive website can book a room can choose date and form admin side can create room."},
-  {id: "2", name: "Crypto Currency Tracker", image: crypto, demo: "https://ddcrypto-hunter.netlify.app/", source: "https://github.com/dulice/crypto-tracker", description: "This is a crypto tracker app using frontend with React and fetching api with redux toolkit. To get top crypto currency, fetching api from coin ranking and to get the daily news update of crypto currency, fetching api from bing news search api."},
-  {id: "3", name: "Movie Trailer App", image: movieImg, demo: "https://ddmovie.netlify.app/", source: "https://github.com/dulice/movie-app", description: "This is a full responsive movie trailer App include search bar, top movie, top tv show, popular people, etc. Using frontend as a Reactjs and CSS framwork Bootstrap. Fetching data from TMDB."},
-  {id: "4", name: "Cooking Recipe App", image: cooking, demo: "https://recipe-app-dulice.netlify.app/", source: "https://github.com/dulice/cooking-app", description: "I created cooking recipe app using React and fetching api from spoonacular. You can search every recipe and can see the instruction and also ingredients."},
-
-]
 
 const Protfolio = () => {
   const [show, setShow] = useState(false);
@@ -61,7 +48,7 @@ const Protfolio = () => {
                 duration: 1,
                 type: "spring"
               }}
-             className="popup shadow-md rounded-sm z-20 fixed width-full inset-x-6 sm:inset-x-20 bg-gray-300 dark:bg-gray-500 dark:text-white">
+             className="popup shadow-md rounded-sm z-20 fixed width-full h-full overflow-y-scroll inset-x-6 sm:inset-x-20 bg-gray-300 dark:bg-gray-500 dark:text-white">
               <div className="grid grid-cols-6 gap-6 h-full">
                 <div className="col-span-6 lg:col-span-3 p-10">
                   <button className='float-right' onClick={handleClose}><BsXLg/></button>
