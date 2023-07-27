@@ -52,10 +52,12 @@ const Navbar = () => {
     >
       <div className="max-w-6xl mx-auto px-2 sm:px-6 lg:px-8">
         <div className={`py-3 hidden sm:flex justify-between items-center duration-500 `}>
+          <Link to="hero" className='cursor-pointer' smooth={true}>
             <p className='text-2xl font-bold'>
                 <span className="dark:text-white">Port</span>
                 <span className=" text-skin-base">folio</span>
             </p>
+          </Link>
             <div className="hidden sm:block sm:ml-6">
                 <div className="flex space-x-9 text-white">
                     <button onClick={handleDarkMode} className="p-2 rounded-full border-2 dark:border-white border-black">

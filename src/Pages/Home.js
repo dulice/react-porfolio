@@ -1,8 +1,15 @@
 import React from 'react'
+import {Hero, About, Service, Contact, Portfolio } from '.'
 
 const Home = () => {
   return (
-    <div>Home</div>
+    <>
+      <Hero /> 
+      <About />
+      <Service /> 
+      <Portfolio /> 
+      <Contact />
+    </>
   )
 }
 

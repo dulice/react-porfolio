@@ -2,6 +2,7 @@ import React, { useContext } from 'react'
 import { Store } from '../context/Store';
 import heroImg from '../image/hero.png';
 import { motion } from 'framer-motion';
+
 const Hero = () => {
   const { dispatch} = useContext(Store);
 
