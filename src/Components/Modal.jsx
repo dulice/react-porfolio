@@ -16,7 +16,7 @@ const Modal = ({card, handleClose}) => {
               <div className="grid grid-cols-6 gap-6 h-full">
                 <div className="col-span-6 lg:col-span-3 p-10">
                   <button className='float-right' onClick={handleClose}><BsXLg/></button>
-                  <p className="font-bold text-2xl mb-5">{card.name}</p>
+                  <p className="font-bold text-2xl mb-5">{card.title}</p>
                   <p className="" dangerouslySetInnerHTML={{__html: card.description}}></p>
                   <div className="flex justify-between mt-5">
                     <a href={card.demo} target="_blank" rel="noopener noreferrer" className="underline text-blue-600 font-bold">Demo</a>

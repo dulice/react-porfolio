@@ -4,7 +4,7 @@ import ReactQuill from "react-quill";
 import "react-quill/dist/quill.snow.css";
 import axios from "axios";
 
-export const port = process.env.REACT_APP_API_URL
+export const port = "https://portfolio-api-azure.vercel.app/api"
 
 const AddProject = () => {
   const [title, seTtitle] = useState("");

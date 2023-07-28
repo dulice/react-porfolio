@@ -26,7 +26,7 @@ const ProjectCard = ({ card }) => {
           onClick={handleShow}
           className="hover:scale-95 duration-500"
         />
-        <p className="text-center my-5 font-bold">{card.name}</p>
+        <p className="text-center my-5 font-bold">{card.title}</p>
         <div className="flex justify-between">
           <a
             href={card.demo}
